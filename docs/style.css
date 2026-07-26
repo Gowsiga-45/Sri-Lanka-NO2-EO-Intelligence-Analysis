@@ -464,3 +464,377 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* =====================================================
+   OSINT + ANALYTICAL SYNTHESIS + METHODOLOGY
+   + LIMITATIONS + FOOTER
+===================================================== */
+
+
+/* -------------------------
+   GENERAL SECTION SPACING
+------------------------- */
+
+#osint,
+#synthesis,
+#methodology,
+#limitations {
+  padding: 110px 8%;
+  border-top: 1px solid #1d3440;
+  background: #07151e;
+}
+
+#osint h2,
+#synthesis h2,
+#methodology h2,
+#limitations h2 {
+  margin: 18px 0 28px;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 1.05;
+  color: #eef4f7;
+  letter-spacing: -2px;
+}
+
+.section-intro {
+  max-width: 900px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #9bb8c8;
+}
+
+.section-label {
+  color: #55d6c2;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+/* -------------------------
+   EVIDENCE / OSINT CARDS
+------------------------- */
+
+#osint .evidence-grid,
+#synthesis .evidence-grid,
+#methodology .evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 45px;
+}
+
+#osint .evidence-card,
+#synthesis .evidence-card,
+#methodology .evidence-card {
+  border: 1px solid #29404b;
+  background: #0c1b24;
+  padding: 32px;
+  min-height: 280px;
+  transition: transform 0.25s ease,
+              border-color 0.25s ease,
+              background 0.25s ease;
+}
+
+#osint .evidence-card:hover,
+#synthesis .evidence-card:hover,
+#methodology .evidence-card:hover {
+  transform: translateY(-4px);
+  border-color: #55d6c2;
+  background: #0e202a;
+}
+
+
+/* -------------------------
+   CARD HEADER
+------------------------- */
+
+#osint .evidence-header,
+#synthesis .evidence-header,
+#methodology .evidence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+
+  border-bottom: 1px solid #29404b;
+
+  color: #78a4b8;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+
+/* -------------------------
+   CARD TITLES
+------------------------- */
+
+#osint .evidence-card h3,
+#synthesis .evidence-card h3,
+#methodology .evidence-card h3 {
+  margin: 0 0 18px;
+  color: #f1f5f7;
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+
+/* -------------------------
+   CARD TEXT
+------------------------- */
+
+#osint .evidence-card p,
+#synthesis .evidence-card p,
+#methodology .evidence-card p {
+  margin: 0;
+  color: #9db9c8;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+
+/* -------------------------
+   CONFIDENCE BADGES
+------------------------- */
+
+.confidence {
+  display: inline-block;
+  padding: 7px 10px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.confidence.high {
+  color: #55d6c2;
+  border: 1px solid #55d6c2;
+}
+
+.confidence.moderate {
+  color: #e5b84b;
+  border: 1px solid #e5b84b;
+}
+
+
+/* -------------------------
+   EVIDENCE METADATA
+------------------------- */
+
+.evidence-meta {
+  margin-top: 25px;
+  padding-top: 20px;
+
+  border-top: 1px solid #29404b;
+
+  color: #8fb1c1;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.evidence-meta strong {
+  color: #eef4f7;
+}
+
+
+/* -------------------------
+   ANALYSIS BOX
+------------------------- */
+
+.analysis-box {
+  margin-top: 45px;
+  padding: 35px 38px;
+
+  background: #0c1b24;
+  border: 1px solid #29404b;
+  border-left: 4px solid #55d6c2;
+}
+
+.analysis-box h3 {
+  margin: 15px 0 18px;
+
+  max-width: 1000px;
+
+  color: #eef4f7;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.analysis-box p {
+  max-width: 1000px;
+  margin: 0 0 18px;
+
+  color: #9db9c8;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.analysis-box p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* -------------------------
+   DIFFERENT SECTION TONES
+------------------------- */
+
+#synthesis {
+  background: #081720;
+}
+
+#methodology {
+  background: #07151e;
+}
+
+#limitations {
+  background: #081720;
+}
+
+
+/* -------------------------
+   METHODOLOGY STEP CARDS
+------------------------- */
+
+#methodology .evidence-card {
+  min-height: 240px;
+}
+
+#methodology .evidence-header span:first-child {
+  color: #55d6c2;
+  font-weight: 700;
+}
+
+
+/* -------------------------
+   LIMITATIONS
+------------------------- */
+
+#limitations .analysis-box {
+  max-width: 1100px;
+}
+
+#limitations .analysis-box p {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #223945;
+}
+
+#limitations .analysis-box p:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+.footer {
+  padding: 55px 8%;
+
+  border-top: 1px solid #29404b;
+  background: #051119;
+
+  text-align: center;
+}
+
+.footer strong {
+  color: #55d6c2;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.footer p {
+  margin: 10px 0 0;
+
+  color: #6f91a2;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+  #osint,
+  #synthesis,
+  #methodology,
+  #limitations {
+    padding: 80px 6%;
+  }
+
+  #osint .evidence-grid,
+  #synthesis .evidence-grid,
+  #methodology .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #osint h2,
+  #synthesis h2,
+  #methodology h2,
+  #limitations h2 {
+    font-size: 44px;
+    letter-spacing: -1px;
+  }
+
+  .analysis-box {
+    padding: 28px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  #osint,
+  #synthesis,
+  #methodology,
+  #limitations {
+    padding: 65px 5%;
+  }
+
+  #osint h2,
+  #synthesis h2,
+  #methodology h2,
+  #limitations h2 {
+    font-size: 36px;
+  }
+
+  .section-intro {
+    font-size: 16px;
+  }
+
+  #osint .evidence-card,
+  #synthesis .evidence-card,
+  #methodology .evidence-card {
+    padding: 24px;
+    min-height: auto;
+  }
+
+  #osint .evidence-header,
+  #synthesis .evidence-header,
+  #methodology .evidence-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .analysis-box {
+    padding: 24px;
+  }
+
+  .footer {
+    padding: 45px 5%;
+  }
+
+}
