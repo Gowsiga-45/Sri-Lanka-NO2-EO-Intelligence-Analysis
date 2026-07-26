@@ -35,3 +35,16 @@ The district-level annual mean NO₂ distribution shows clear spatial variation 
 This spatial pattern complements the persistent-hotspot analysis by distinguishing overall annual mean NO₂ levels from areas where elevated NO₂ conditions repeatedly occurred throughout the year.
 
 > **Note:** Values represent Sentinel-5P TROPOMI tropospheric NO₂ column density aggregated to the district level. The map represents satellite-derived atmospheric column measurements and should not be interpreted directly as ground-level NO₂ concentrations.
+>
+
+## NO₂ Hotspot Frequency — 2020
+
+![NO2 Hotspot Frequency](outputs/maps/no2_hotspot_frequency_2020_portfolio.png)
+
+The hotspot-frequency analysis shows how consistently elevated tropospheric NO₂ conditions occurred across Sri Lanka during 2020. Each pixel represents the number of months in which it was classified as an NO₂ hotspot, ranging from 1 to 12 months.
+
+The strongest temporal persistence is concentrated in western Sri Lanka, particularly around the Colombo metropolitan region, where some locations were identified as hotspots during most or all months of the year. More localized recurring hotspots are also visible in other parts of the country.
+
+This frequency-based analysis distinguishes persistent NO₂ patterns from short-term or isolated monthly anomalies and provides a temporal dimension to the spatial hotspot assessment.
+
+> **Note:** Hotspot frequency represents the number of monthly observations meeting the project's hotspot criterion. It should not be interpreted directly as ground-level NO₂ concentration or population exposure.
