@@ -1,1 +1,402 @@
+/* =========================================
+   SRI LANKA NO2 EO INTELLIGENCE ASSESSMENT
+   ========================================= */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #071018;
+  color: #e8edf2;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+  min-height: 72px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(7, 16, 24, 0.96);
+  border-bottom: 1px solid #22313d;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #55d6be;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #aebbc5;
+  text-decoration: none;
+  font-size: 0.82rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+  color: #55d6be;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 10%;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(30, 110, 120, 0.18), transparent 35%),
+    linear-gradient(135deg, #071018 0%, #0b1822 100%);
+  border-bottom: 1px solid #1e2d38;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.eyebrow {
+  color: #55d6be;
+  letter-spacing: 3px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  margin-bottom: 30px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #8395a3;
+  font-weight: 400;
+  font-size: 0.55em;
+  letter-spacing: -1px;
+  margin-top: 18px;
+}
+
+.hero-description {
+  max-width: 720px;
+  color: #aebbc5;
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 38px;
+}
+
+.tags span {
+  border: 1px solid #30424f;
+  padding: 7px 12px;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  color: #b9c6ce;
+  background: #0b1620;
+}
+
+.primary-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #071018;
+  background: #55d6be;
+  padding: 14px 22px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.primary-button:hover {
+  opacity: 0.88;
+}
+
+
+/* =========================================
+   GENERAL SECTIONS
+   ========================================= */
+
+.section {
+  padding: 100px 10%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.dark-section {
+  max-width: none;
+  background: #0a141d;
+  border-top: 1px solid #1e2d38;
+  border-bottom: 1px solid #1e2d38;
+}
+
+.dark-section > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-number {
+  color: #55d6be;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin-bottom: 16px;
+}
+
+.section h2 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+
+.section-intro {
+  max-width: 760px;
+  color: #9eacb6;
+  margin-bottom: 45px;
+}
+
+
+/* =========================================
+   INTELLIGENCE QUESTION
+   ========================================= */
+
+.question-box {
+  max-width: 950px;
+  padding: 30px;
+  background: #0d1922;
+  border-left: 4px solid #55d6be;
+  border-top: 1px solid #233440;
+  border-right: 1px solid #233440;
+  border-bottom: 1px solid #233440;
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+
+/* =========================================
+   METADATA
+   ========================================= */
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #263642;
+  border-bottom: 1px solid #263642;
+  margin-bottom: 55px;
+}
+
+.metadata-grid div {
+  padding: 24px 20px;
+  border-right: 1px solid #263642;
+}
+
+.metadata-grid div:first-child {
+  padding-left: 0;
+}
+
+.metadata-grid div:last-child {
+  border-right: none;
+}
+
+.metadata-grid p {
+  color: #6f8492;
+  font-size: 0.67rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.metadata-grid strong {
+  font-size: 0.95rem;
+}
+
+
+/* =========================================
+   KEY METRICS
+   ========================================= */
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.metric {
+  padding: 30px;
+  background: #0b1720;
+  border: 1px solid #263642;
+}
+
+.metric span {
+  display: block;
+  color: #55d6be;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.metric p {
+  color: #91a1ac;
+  font-size: 0.85rem;
+}
+
+
+/* =========================================
+   KEY JUDGMENTS
+   ========================================= */
+
+.judgment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.judgment-card {
+  background: #0d1922;
+  border: 1px solid #263642;
+  padding: 30px;
+  min-height: 270px;
+}
+
+.judgment-card:hover {
+  border-color: #46606f;
+}
+
+.judgment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #243541;
+  margin-bottom: 22px;
+  color: #758996;
+  font-size: 0.72rem;
+  letter-spacing: 1.3px;
+}
+
+.judgment-card h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.judgment-card p {
+  color: #9dabb5;
+  font-size: 0.92rem;
+}
+
+.confidence {
+  padding: 5px 9px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.confidence.high {
+  color: #55d6be;
+  border: 1px solid #55d6be;
+}
+
+.confidence.moderate {
+  color: #e4b860;
+  border: 1px solid #e4b860;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero,
+  .section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .metadata-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .metadata-grid div {
+    border-bottom: 1px solid #263642;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .judgment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .hero {
+    min-height: auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .metadata-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metadata-grid div {
+    padding-left: 0;
+    border-right: none;
+  }
+
+  .judgment-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
