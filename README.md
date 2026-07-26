@@ -20,8 +20,10 @@ The analysis focuses on identifying persistent NO₂ hotspot patterns during 202
 
 ## Key Result
 
+## Key Result
+
 ![Persistent NO2 Hotspot Coverage by District](outputs/charts/district_hotspot_coverage_2020.png)
 
 Persistent hotspot coverage shows a strong spatial concentration in selected districts. Colombo recorded the highest district-level coverage (approximately 93.6%), followed by Gampaha (approximately 59.5%) and Kegalle (approximately 14.3%).
 
-> **Note:** Persistent hotspot coverage refers to areas meeting the project's ≥6-month hotspot persistence criterion. It should not be interpreted directly as a measure of ground-level NO₂ concentration or overall air-quality exposure.S
+> **Note:** Persistent hotspot coverage refers to areas meeting the project's ≥6-month hotspot persistence criterion. It should not be interpreted directly as a measure of ground-level NO₂ concentration or overall air-quality exposure.
