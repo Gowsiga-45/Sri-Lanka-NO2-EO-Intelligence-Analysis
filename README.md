@@ -25,3 +25,13 @@ The analysis focuses on identifying persistent NO₂ hotspot patterns during 202
 Persistent hotspot coverage shows a strong spatial concentration in selected districts. Colombo recorded the highest district-level coverage (approximately 93.6%), followed by Gampaha (approximately 59.5%) and Kegalle (approximately 14.3%).
 
 > **Note:** Persistent hotspot coverage refers to areas meeting the project's ≥6-month hotspot persistence criterion. It should not be interpreted directly as a measure of ground-level NO₂ concentration or overall air-quality exposure.
+
+### District Mean Tropospheric NO₂ — 2020
+
+![District Mean Tropospheric NO2 — Sri Lanka 2020](outputs/maps/district_mean_no2_2020_portfolio_legend.png)
+
+The district-level annual mean NO₂ distribution shows clear spatial variation across Sri Lanka. Higher mean tropospheric NO₂ column densities are concentrated in parts of western Sri Lanka, while comparatively lower values dominate much of the central, eastern, and northern regions.
+
+This spatial pattern complements the persistent-hotspot analysis by distinguishing overall annual mean NO₂ levels from areas where elevated NO₂ conditions repeatedly occurred throughout the year.
+
+> **Note:** Values represent Sentinel-5P TROPOMI tropospheric NO₂ column density aggregated to the district level. The map represents satellite-derived atmospheric column measurements and should not be interpreted directly as ground-level NO₂ concentrations.
