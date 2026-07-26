@@ -18,6 +18,13 @@ The analysis focuses on identifying persistent NO₂ hotspot patterns during 202
 - Rank districts according to persistent hotspot coverage.
 - Produce reproducible geospatial outputs, district-level statistics, and portfolio-ready visualizations.
 
+### Google Earth Engine Scripts
+
+The `gee/` directory contains two versions of the analysis:
+
+- **Sentinel5P_NO2_Air_Quality_SriLanka_CLEAN.js** — streamlined and documented version of the workflow for reproducibility and portfolio review.
+- **Sentinel5P_NO2_Air_Quality_SriLanka_FULL.js** — complete Google Earth Engine implementation containing the full analysis, visualization, statistics, and export workflow.
+
 ## Key Result
 
 ### Persistent NO₂ Hotspot Coverage 
