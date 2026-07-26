@@ -48,3 +48,13 @@ The strongest temporal persistence is concentrated in western Sri Lanka, particu
 This frequency-based analysis distinguishes persistent NO₂ patterns from short-term or isolated monthly anomalies and provides a temporal dimension to the spatial hotspot assessment.
 
 > **Note:** Hotspot frequency represents the number of monthly observations meeting the project's hotspot criterion. It should not be interpreted directly as ground-level NO₂ concentration or population exposure.
+
+### Persistent NO₂ Hotspots
+
+![Persistent NO2 Hotspots in Sri Lanka](outputs/maps/persistent_no2_hotspots_2020_portfolio.png)
+
+Persistent hotspots were defined as locations classified as monthly NO₂ hotspots in at least 6 months during 2020. The results show a strong concentration of persistent hotspot activity in western Sri Lanka, with additional localized areas elsewhere in the country.
+
+District boundaries are shown using FAO GAUL 2015 administrative boundaries to provide geographic context.
+
+> **Note:** The hotspot classification is based on Sentinel-5P TROPOMI tropospheric NO₂ column density and represents satellite-derived atmospheric column measurements rather than direct ground-level NO₂ concentrations.
