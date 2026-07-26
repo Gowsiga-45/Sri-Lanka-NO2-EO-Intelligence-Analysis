@@ -20,7 +20,7 @@ The analysis focuses on identifying persistent NO₂ hotspot patterns during 202
 
 ## Key Result
 
-### Persistent NO2 Hotspot Coverage 
+### Persistent NO₂ Hotspot Coverage 
 
 ![Persistent NO2 Hotspot Coverage by District](outputs/charts/district_hotspot_coverage_2020.png)
 
