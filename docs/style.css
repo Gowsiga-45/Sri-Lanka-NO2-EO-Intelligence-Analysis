@@ -400,3 +400,67 @@ body {
     flex-direction: column;
   }
 }
+
+
+/* ==========================================
+   EO EVIDENCE
+========================================== */
+
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 45px;
+}
+
+.evidence-card {
+    border: 1px solid #29404b;
+    background: #0c1b24;
+    padding: 32px;
+    min-height: 300px;
+}
+
+.evidence-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #29404b;
+
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #78a4b8;
+}
+
+.evidence-card h3 {
+    font-size: 21px;
+    line-height: 1.45;
+    margin-bottom: 18px;
+    color: #f2f6f8;
+}
+
+.evidence-card p {
+    color: #a8c3d0;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.evidence-meta {
+    border-top: 1px solid #29404b;
+    padding-top: 18px;
+    color: #8eacba;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.evidence-meta strong {
+    color: #d9e5ea;
+}
+
+@media (max-width: 850px) {
+    .evidence-grid {
+        grid-template-columns: 1fr;
+    }
+}
